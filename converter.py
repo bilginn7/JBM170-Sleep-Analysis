@@ -15,7 +15,7 @@ import sys
 from pathlib import Path
 
 from utils import FIELDNAMES
-from converters import bilgin, mifitness, pieter, rayan
+from converters import bilgin, mifitness, pieter, rayan, jokubas
 
 # ── CONFIG ────────────────────────────────────────────────────────────────────
 
@@ -29,6 +29,7 @@ FORMAT_MAP = {
     'pieter':                     ('pieter',    'pieter'),
     'sleep_data_extracted_newer': ('pieter',    'pieter'),
     'rayan':                      ('ods',       None),
+    'jokubas':                    ('apple_health', None),
 }
 
 # ── LOGGING ───────────────────────────────────────────────────────────────────
@@ -72,6 +73,8 @@ def main():
                 rows = list(pieter.parse(file, user_id))
             elif fmt == 'ods':
                 rows = list(rayan.parse(file, user_id))
+            elif fmt == 'apple_health':
+                rows = list(jokubas.parse(file, user_id))
             else:
                 logging.error("Unknown format '%s'", fmt)
                 continue
