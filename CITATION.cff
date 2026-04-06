@@ -1,0 +1,29 @@
+cff-version: 1.2.0
+title: "JBM170 Sleep Analysis: Effect of Screen Time Reduction on Sleep Quality and Duration"
+message: "If you use this dataset or code, please cite it as below."
+type: dataset
+authors:
+  - family-names: Eren
+    given-names: Bilgin
+    affiliation: Eindhoven University of Technology
+  - family-names: Jansen
+    given-names: Junior
+    affiliation: Eindhoven University of Technology
+  - family-names: Mahmoud
+    given-names: Rayan
+    affiliation: Eindhoven University of Technology
+  - family-names: Pronk
+    given-names: Pieter
+    affiliation: Eindhoven University of Technology
+  - family-names: Jasas
+    given-names: Jokubas
+    affiliation: Eindhoven University of Technology
+repository-code: "https://github.com/bilginn7/JBM170-Sleep-Analysis"
+date-released: "2026-03-27"
+keywords:
+  - sleep analysis
+  - screen time
+  - quantified self
+  - wearable devices
+  - JBM170
+license: MIT
